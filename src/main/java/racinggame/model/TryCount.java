@@ -7,7 +7,7 @@ import lombok.Getter;
 
 @Getter
 public class TryCount {
-	Integer tryCount;
+	private Integer tryCount;
 
 	public TryCount(String readLine) {
 		// TODO : 사용자에게 이동 횟수 입력받기
