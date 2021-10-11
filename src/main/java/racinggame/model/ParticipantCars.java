@@ -6,9 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import exception.InputException;
+import lombok.Getter;
 
+@Getter
 public class ParticipantCars {
-	List<Car> participants = new ArrayList<>();
+	private List<Car> participants = new ArrayList<>();
 
 	public ParticipantCars(String participantsString) {
 		// TODO : 자동차 이름 설정
