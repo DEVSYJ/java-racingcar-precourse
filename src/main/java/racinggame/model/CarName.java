@@ -1,5 +1,8 @@
 package racinggame.model;
 
+import lombok.Getter;
+
+@Getter
 public class CarName {
 	private String name;
 
