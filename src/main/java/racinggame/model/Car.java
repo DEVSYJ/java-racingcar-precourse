@@ -6,7 +6,6 @@ import lombok.ToString;
 
 @ToString
 public class Car {
-
 	private CarName name;
 	private MoveCount moveCount = new MoveCount();
 
