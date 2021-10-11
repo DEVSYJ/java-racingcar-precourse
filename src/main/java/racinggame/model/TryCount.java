@@ -9,11 +9,16 @@ import lombok.Getter;
 public class TryCount {
 	private Integer tryCount;
 
-	public TryCount(String readLine) {
-		// TODO : 사용자에게 이동 횟수 입력받기
-		// TODO : INPUT 에러처리
-		if (false) {
+	public TryCount(String tryCountString) {
+		Integer tryCount;
+		try {
+			tryCount = Integer.parseInt(tryCountString);
+		} catch (NumberFormatException e) {
 			throw new InputException(TRY_COUNT_INPUT_FORMAT_ERROR_MESSAGE);
 		}
+		if (tryCount < 1) {
+			throw new InputException(TRY_COUNT_INPUT_FORMAT_ERROR_MESSAGE);
+		}
+		this.tryCount = tryCount;
 	}
 }
