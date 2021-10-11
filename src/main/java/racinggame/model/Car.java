@@ -1,5 +1,7 @@
 package racinggame.model;
 
+import static nextstep.utils.Randoms.*;
+
 import lombok.Getter;
 import lombok.ToString;
 
@@ -14,15 +16,12 @@ public class Car {
 	}
 
 	public void move() {
-		/* TODO
-		전진여부 체크
-		0~9의 random값 돌리기
-		4 이상일 경우 전진
-		3 이하일 경우 스탑
-		 */
+		if (isMovable(pickNumberInRange(0, 9))) {
+			this.moveCount.plusCount();
+		}
 	}
 
-	boolean move(int randomValue) {
-		return false;
+	boolean isMovable(int randomValue) {
+		return randomValue >= 4;
 	}
 }

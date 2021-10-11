@@ -17,10 +17,8 @@ class CarTest {
 	void forwardMoveTest() {
 		int[] mockRandomValues = {4, 5, 6, 7, 8, 9};
 		for (int mockRandomValue : mockRandomValues) {
-			car.move(mockRandomValue);
-
-			assertThat(car.getMoveCount().getValue())
-				.isPositive();
+			assertThat(car.isMovable(mockRandomValue))
+				.isTrue();
 		}
 	}
 
@@ -28,10 +26,8 @@ class CarTest {
 	void stopMoveTest() {
 		int[] mockRandomValues = {0, 1, 2, 3};
 		for (int mockRandomValue : mockRandomValues) {
-			car.move(mockRandomValue);
-
-			assertThat(car.getMoveCount().getValue())
-				.isZero();
+			assertThat(car.isMovable(mockRandomValue))
+				.isFalse();
 		}
 	}
 }
