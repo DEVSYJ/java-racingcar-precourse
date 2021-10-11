@@ -39,4 +39,9 @@ public class Car {
 	boolean isMovable(int randomValue) {
 		return randomValue >= 4;
 	}
+
+	// for test
+	public void forceMove() {
+		this.moveCount.plusCount();
+	}
 }
