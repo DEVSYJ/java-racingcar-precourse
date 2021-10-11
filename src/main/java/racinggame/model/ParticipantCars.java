@@ -19,4 +19,10 @@ public class ParticipantCars {
 			participants.add(new Car(st.nextToken()));
 		}
 	}
+
+	public void moveEachCar() {
+		for (Car car : participants) {
+			car.move();
+		}
+	}
 }
