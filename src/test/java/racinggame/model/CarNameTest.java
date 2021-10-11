@@ -24,8 +24,6 @@ class CarNameTest {
 	@Test
 	void createCarNameFailTest() {
 		for (String carNameString : missMatchCarNames) {
-			CarName carName = new CarName(carNameString);
-
 			assertThrows(InputException.class, () -> {
 				new CarName(carNameString);
 			});
