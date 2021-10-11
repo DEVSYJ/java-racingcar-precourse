@@ -4,8 +4,10 @@ import static exception.ErrorMessage.*;
 
 import exception.InputException;
 import lombok.Getter;
+import lombok.ToString;
 
 @Getter
+@ToString
 public class CarName {
 	private static final int MAX_LENGTH_CAR_NAME = 5;
 	private String name;

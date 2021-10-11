@@ -1,11 +1,13 @@
 package racinggame.model;
 
+import lombok.ToString;
+
+@ToString
 public class Car {
 	private CarName name;
 
 	public Car(String name) {
-		// TODO : 자동차 이름 설정
-		// TODO : 5자 이하
+		this.name = new CarName(name);
 	}
 
 	public void move() {
