@@ -6,5 +6,7 @@ import java.util.List;
 public class Winners {
 	List<Car> winners = new ArrayList<>();
 
-	// TODO : 우승자 설정
+	public Winners(ParticipantCars participant) {
+		// TODO : 우승자 설정
+	}
 }
