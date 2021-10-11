@@ -41,7 +41,7 @@ class ParticipantCarsTest {
 		participantCars.moveEachCar();
 
 		for (int i = 0; i < 3; i++) {
-			assertThat(participantCars.getParticipants().get(i).getMoveCount().getValue())
+			assertThat(participantCars.getParticipants().get(i).getMoveCount())
 				.isNotNegative();
 		}
 	}

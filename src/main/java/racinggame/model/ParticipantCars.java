@@ -5,10 +5,8 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 import lombok.Getter;
-import lombok.ToString;
 
 @Getter
-@ToString
 public class ParticipantCars {
 	private List<Car> participants = new ArrayList<>();
 
@@ -24,5 +22,17 @@ public class ParticipantCars {
 		for (Car car : participants) {
 			car.move();
 		}
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder result = new StringBuilder();
+		for (Car car : participants) {
+			result.append(car.getName());
+			result.append(":");
+			result.append(car.printMoveCount());
+			result.append("\n");
+		}
+		return result.toString();
 	}
 }

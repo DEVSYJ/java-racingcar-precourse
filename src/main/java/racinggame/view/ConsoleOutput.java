@@ -5,6 +5,7 @@ public class ConsoleOutput {
 	private static final String INPUT_TRY_COUNT_MESSAGE = "시도할 회수는 몇회인가요?";
 	private static final String OUTPUT_WINNERS_MESSAGE_1 = "최종 우승자는 ";
 	private static final String OUTPUT_WINNERS_MESSAGE_2 = " 입니다.";
+	private static final String OUTPUT_EXECUTION_RESULT_MESSAGE = "실행결과";
 
 	public static void printMessageForParticipantCarsNameInput() {
 		printlnMessage(INPUT_PARTICIPANT_CARS_NAME_MESSAGE);
@@ -16,6 +17,10 @@ public class ConsoleOutput {
 
 	public static void printWinnersOutput(String winnersString) {
 		printlnMessage(OUTPUT_WINNERS_MESSAGE_1 + winnersString + OUTPUT_WINNERS_MESSAGE_2);
+	}
+
+	public static void printExecutionResultStringOutput() {
+		printlnMessage(OUTPUT_EXECUTION_RESULT_MESSAGE);
 	}
 
 	public static void printlnMessage(String message) {

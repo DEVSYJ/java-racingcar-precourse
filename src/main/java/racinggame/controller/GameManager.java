@@ -41,9 +41,11 @@ public class GameManager {
 	}
 
 	private static Winners playGame(ParticipantCars participant, TryCount tryCount) {
-		// TODO : tryCount 내 각 자동차들 전진
-		for (int i = 0; i < tryCount.getValue(); i++) {
+		printExecutionResultStringOutput();
 
+		for (int i = 0; i < tryCount.getValue(); i++) {
+			participant.moveEachCar();
+			printlnMessage(participant.toString());
 		}
 
 		return new Winners(participant);
