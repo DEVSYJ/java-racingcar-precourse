@@ -7,10 +7,10 @@ import lombok.Getter;
 
 @Getter
 public class TryCount {
-	private Integer value;
+	private int value;
 
 	public TryCount(String tryCountString) {
-		Integer tryCount;
+		int tryCount;
 		try {
 			tryCount = Integer.parseInt(tryCountString);
 		} catch (NumberFormatException e) {
