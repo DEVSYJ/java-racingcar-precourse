@@ -7,7 +7,7 @@ import lombok.Getter;
 
 @Getter
 public class TryCount {
-	private Integer tryCount;
+	private Integer value;
 
 	public TryCount(String tryCountString) {
 		Integer tryCount;
@@ -19,6 +19,6 @@ public class TryCount {
 		if (tryCount < 1) {
 			throw new InputException(TRY_COUNT_INPUT_FORMAT_ERROR_MESSAGE);
 		}
-		this.tryCount = tryCount;
+		this.value = tryCount;
 	}
 }

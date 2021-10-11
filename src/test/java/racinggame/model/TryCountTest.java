@@ -16,7 +16,7 @@ class TryCountTest {
 		for (String tryCountString : matchTryCountString) {
 			TryCount tryCount = new TryCount(tryCountString);
 
-			assertThat(tryCount.getTryCount())
+			assertThat(tryCount.getValue())
 				.isPositive();
 		}
 	}

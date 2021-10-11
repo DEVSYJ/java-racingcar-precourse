@@ -16,7 +16,7 @@ class CarNameTest {
 		for (String carNameString : matchCarNames) {
 			CarName carName = new CarName(carNameString);
 
-			assertThat(carName.getName())
+			assertThat(carName.getValue())
 				.hasSizeLessThanOrEqualTo(5);
 		}
 	}
