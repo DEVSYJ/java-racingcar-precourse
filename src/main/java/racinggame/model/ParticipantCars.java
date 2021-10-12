@@ -29,7 +29,7 @@ public class ParticipantCars {
 		StringBuilder result = new StringBuilder();
 		for (Car car : participants) {
 			result.append(car.getName());
-			result.append(":");
+			result.append(" : ");
 			result.append(car.printMoveCount());
 			result.append("\n");
 		}
