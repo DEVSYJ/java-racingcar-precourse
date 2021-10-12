@@ -52,9 +52,6 @@ public class GameManager {
 	}
 
 	private static void awardWinner(Winners winners) {
-		// TODO : 우승자 공유
-		// TODO : 우승자가 한명 이상일 경우 쉼표로 이름 구분해 출력
-		String winnerString = "";
-		printWinnersOutput(winnerString);
+		printWinnersOutput(winners.toString());
 	}
 }

@@ -28,4 +28,19 @@ public class Winners {
 			winners.add(car);
 		}
 	}
+
+	@Override
+	public String toString() {
+		if (winners.isEmpty()) {
+			return "";
+		}
+
+		StringBuilder result = new StringBuilder();
+		result.append(winners.get(0).getName());
+		for (int i = 1; i < winners.size(); i++) {
+			result.append(",");
+			result.append(winners.get(i).getName());
+		}
+		return result.toString();
+	}
 }
